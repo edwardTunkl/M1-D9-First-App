@@ -44,42 +44,49 @@ for (let field = 1; field <= 76; field++) {
   let newField = document.createElement("div")
   newField.innerText = field
   newField.classList.add("eachField")
+  newField.classList.add("selected")
   bingoContainer.appendChild(newField)
   newField.style.color = "blue"
   newField.style.backgroundColor = "yellow"
   newField.style.textAlign = "center"
   newField.style.paddingTop = "30px"
   newField.style.width = "15%"
-  newField.style.height = "50px"
+  newField.style.height = "70px"
   newField.style.border = "1px solid"
   newField.style.borderRadius = "7px"
+  newField.style.fontSize = "30px"
+  newField.style.fontWeight = "bold"
 
 }
 
 
-  let heading = document.createElement("h1")
-  let t = document.createTextNode("Welcome to Bingo")
-  heading.appendChild(t)
-  bingoContainer.before(heading)
-  heading.style.textAlign = "center"
+let heading = document.createElement("h1")
+let t = document.createTextNode("Welcome to Bingo")
+heading.appendChild(t)
+bingoContainer.before(heading)
+heading.style.textAlign = "center"
 
-  let button = document.createElement("input")
-  bingoContainer.before(button)
-  button.setAttribute("type", "button")
-  button.setAttribute("value", "CLICK ME")
-  button.style.width ="200px"
-  button.style.height ="50px"
-  button.addEventListener("click", )
+let button = document.createElement("input")
+bingoContainer.before(button)
+button.setAttribute("type", "button")
+button.setAttribute("value", "CLICK ME")
+button.style.width ="200px"
+button.style.height ="50px"
+button.addEventListener("click", clickFunction())
 
-  
- const clickFunction = function (){
 
-  
+
+
+
+}
+const clickFunction = function (){
+ let randomNumer = Math.floor(Math.random()*(76-1)+1)
+ 
+ selectedNumber = document.querySelectorAll("div")[randomNumer]
+ selectedNumber.style.backgroundColor = "red"
+ selectedNumber.style.color = "black"
+
  }
-
-
-
-}
 
 
 
