@@ -1,0 +1,21 @@
+* {
+text-decoration: none;
+
+}
+
+body {
+  background-color: aqua;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+.b-container {
+  max-width: 768px;
+  margin-top: 30px;
+}
+
+.eachField {
+display: inline-block;
+color: ;
+}
